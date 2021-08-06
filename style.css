@@ -31,6 +31,7 @@ body {
 }
 
 .calc_body {
+    background-color: none;
     position: absolute;
     left: 50%;
     top: 50%;

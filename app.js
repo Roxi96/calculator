@@ -65,35 +65,40 @@ function init() {
     }
     sumar.onclick = function (e) {
         primera = resultado.textContent;
+        resultado.textContent = resultado.textContent + '+';
         operacion = '+';
-        limpiar();
+
     }
     resta.onclick = function (e) {
         primera = resultado.textContent;
+        resultado.textContent = resultado.textContent + '-';
         operacion = '-';
-        limpiar();
+
     }
     multi.onclick = function (e) {
         primera = resultado.textContent;
+        resultado.textContent = resultado.textContent + '*';
         operacion = '*';
-        limpiar();
+
     }
     divi.onclick = function (e) {
         primera = resultado.textContent;
+        resultado.textContent = resultado.textContent + '/';
         operacion = '/';
-        limpiar();
+
     }
     igual.onclick = function (e) {
         segunda = resultado.textContent;
         resolver();
     }
+
     function resetear() {
-        resultado.textContent = '';//Boton
+        resultado.textContent = ''; //Boton
         primera = 0;
         segunda = 0;
         operacion = '';
     }
-    
+
     function limpiar() {
         resultado.textContent = '';
     }
