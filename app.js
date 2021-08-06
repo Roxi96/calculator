@@ -67,24 +67,29 @@ function init() {
         primera = resultado.textContent;
         resultado.textContent = resultado.textContent + '+';
         operacion = '+';
+        limpiar();
+
 
     }
     resta.onclick = function (e) {
         primera = resultado.textContent;
         resultado.textContent = resultado.textContent + '-';
         operacion = '-';
+        limpiar();
 
     }
     multi.onclick = function (e) {
         primera = resultado.textContent;
         resultado.textContent = resultado.textContent + '*';
         operacion = '*';
+        limpiar();
 
     }
     divi.onclick = function (e) {
         primera = resultado.textContent;
         resultado.textContent = resultado.textContent + '/';
         operacion = '/';
+        limpiar();
 
     }
     igual.onclick = function (e) {
@@ -109,6 +114,7 @@ function init() {
         let res = 0;
         switch (operacion) {
             case '+':
+
                 res = parseFloat(primera) + parseFloat(segunda);
                 break;
             case '-':
