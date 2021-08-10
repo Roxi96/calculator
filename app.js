@@ -23,6 +23,7 @@ function init() {
     let divi = document.getElementById('divi');
     let igual = document.getElementById('igual');
     let puntito = document.getElementById('punto');
+    let porcentaje = document.getElementById('porcentaje');
 
 
     //eventos
@@ -63,6 +64,10 @@ function init() {
     reset.onclick = function (e) {
         resetear();
     }
+
+    del.onclick = function (e) {
+        borrar();
+    }
     sumar.onclick = function (e) {
         primera = resultado.textContent;
         resultado.textContent = resultado.textContent + '+';
@@ -97,6 +102,7 @@ function init() {
         resolver();
     }
 
+
     function resetear() {
         resultado.textContent = ''; //Boton
         primera = 0;
@@ -108,13 +114,16 @@ function init() {
         resultado.textContent = '';
     }
 
+    function borrar() {
+        resultado.textContent= resultado.textContent.slice(0, -1);
+    }
+
 
 
     function resolver() {
         let res = 0;
         switch (operacion) {
             case '+':
-
                 res = parseFloat(primera) + parseFloat(segunda);
                 break;
             case '-':
