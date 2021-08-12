@@ -38,7 +38,7 @@ p{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-width: 20%;
+   
     /* background-color: #fafafa; */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
@@ -62,7 +62,7 @@ p{
 }
 
 .buttons {
-
+    
     position: relative;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
