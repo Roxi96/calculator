@@ -29,13 +29,16 @@ body {
         background-position: 0% 50%;
     }
 }
-
+p{
+    overflow: hidden;
+}
 .calc_body {
     background-color: none;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    max-width: 20%;
     /* background-color: #fafafa; */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
@@ -44,7 +47,7 @@ body {
     background-color: black;
 
     border-radius: 8px 8px 0 0;
-    padding: 35px;
+    padding: 30px;
     font-size: 2.5rem;
     color: #fff;
     text-shadow:

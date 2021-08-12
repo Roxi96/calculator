@@ -117,7 +117,7 @@ function init() {
     function borrar() {
         resultado.textContent= resultado.textContent.slice(0, -1);
     }
-
+ 
 
 
     function resolver() {
